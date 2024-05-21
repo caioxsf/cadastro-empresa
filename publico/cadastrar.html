@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrar.css">
+    <title>Página de cadastro</title>
+</head>
+<body>
+
+    <div class="container">
+        <form method="POST" action="/cadastroEmpresa">
+            <h1>Cadastro de empresa</h1>
+
+            <label for="nome">Nome da empresa</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="nome_fornecedor">Nome do fornecedor</label>
+            <input type="text" id="nome_fornecedor" name="nome_fornecedor">
+
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj">
+
+            <label for="">Endereço</label>
+            <input type="text" id="endereco" name="endereco">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade">
+
+            <label for="uf">Estado</label>
+            <select name="uf" id="uf">
+                <option selected disabled>Selecione uma opção</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+              </select>
+              
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="tel">Telefone</label>
+            <input type="text" name="tel" id="tel">
+
+            <div class="botoes">
+                <input type="submit" class="btn cadastro" value="Cadastrar">
+                <input type="reset" class="btn redefinir" value="Redefinir">
+                
+            </div> 
+            <a href="index.html" class="voltar">Voltar para página principal</a>
+            <a href="/listarEmpresas" class="listar">Listar empresas cadastradas</a>
+
+        </form>
+    </div>  
+
+
+    
+</body>
+</html>
