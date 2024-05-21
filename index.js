@@ -100,7 +100,7 @@ function cadastrarEmpresa (requisicao, resposta)
         }
 
         resposta.write(`<label for="uf">Estado</label>
-        <select name="uf" id="uf">
+        <select name="uf" id="uf" value=${uf}>
             <option selected disable value=${uf}>Selecione uma opção</option>
             <option>AC</option>
             <option>AL</option>
